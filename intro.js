@@ -85,7 +85,15 @@ myButton.addEventListener('mousedown', function(e){
 
 var context = new AudioContext();
 var oscillator = context.createOscillator();
+var gain = context.createGain();
+gain.gain.value = 0.7;
+
+oscillator.connect(gain);
 
 oscillator.connect(context.destination);
 oscillator.start(context.currentTime);
 oscillator.stop(context.currentTime + 1);
+
+document.body.addEventListener("mousemove", function(e){
+    console.log(e.pageX,e.pageY);
+})
