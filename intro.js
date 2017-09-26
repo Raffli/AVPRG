@@ -72,7 +72,7 @@ var allFrequencies = [
     28160,              29834.480737157748, 31608.53128039195];
 
 var myButton = document.getElementById("myButton");
-var myTextField = document.getElementById("inputField");
+var myTextField = document.getElementById("myTextField");
 
 myButton.addEventListener('mousedown', function(e){
     if (myTextField.value < 0 || myTextField.value > 127){
