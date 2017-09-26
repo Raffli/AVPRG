@@ -75,9 +75,9 @@ var myButton = document.getElementById("myButton");
 var myTextField = document.getElementById("myTextField");
 
 myButton.addEventListener('mousedown', function(e){
-    if (myTextField.value < 0 || myTextField.value > 127){
-        myTextField.value= "Falsche Eingabe";
-    }else{
+    if (myTextField.value >= 0 && myTextField.value <= 127){
         myTextField.value = allFrequencies[myTextField.value];
+    }else{
+        myTextField.value= "Falsche Eingabe";
     }
 });
