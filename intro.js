@@ -74,8 +74,8 @@ var allFrequencies = [
 var myButton = document.getElementById("myButton");
 var myTextField = document.getElementById("myTextField");
 
-myButton.addEventListener('mousedown', function(e){
-    if (myTextField.value >= 0 && myTextField.value <= 127){
+myButton.addEventListener("mousedown", function(e){
+    if (myTextField.value >= 0 && myTextField.value <= 127 ){
         myTextField.value = allFrequencies[myTextField.value];
     }else{
         myTextField.value= "Falsche Eingabe";
@@ -86,14 +86,3 @@ myButton.addEventListener('mousedown', function(e){
 var context = new AudioContext();
 var oscillator = context.createOscillator();
 var gain = context.createGain();
-gain.gain.value = 0.7;
-
-oscillator.connect(gain);
-
-oscillator.connect(context.destination);
-oscillator.start(context.currentTime);
-oscillator.stop(context.currentTime + 1);
-
-document.body.addEventListener("mousemove", function(e){
-    console.log(e.pageX,e.pageY);
-})

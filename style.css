@@ -1,0 +1,30 @@
+
+html, body {
+    background: #999999;
+    height: 100%;
+    color: #123456;
+    font-family: inherit;
+    text-align: center;
+}
+
+h1 {
+    color: #123456;
+}
+
+#myButton{
+    font-size: 25px;
+}
+
+#textFieldLabel {
+    font-size: 30px;
+}
+
+#myTextField {
+    font-size: 30px;
+    background-color: #123fff;
+}
+
+#thermin{
+        font-size: 30px;
+
+}
