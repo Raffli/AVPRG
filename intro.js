@@ -81,8 +81,3 @@ myButton.addEventListener("mousedown", function(e){
         myTextField.value= "Falsche Eingabe";
     }
 });
-
-
-var context = new AudioContext();
-var oscillator = context.createOscillator();
-var gain = context.createGain();
