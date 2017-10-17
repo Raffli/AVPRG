@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Nikos Website!!!</title>
+        <link rel="stylesheet" type="text/css" href="../../style.css">
+    </head>
+    <body>
+        <h1>Compressor</h1>
+        <a href="../../index.html">Frequenz Checker</a>
+        <br>
+        <br>
+        <button id = "playButton">PlayIcon</button>
+        <br>
+        Treshold:
+        <input type = "range" min = "-100" max = "0" value = "-24" id = "treshholdslider">
+        <br>
+        Ratio:
+        <input type = "range" min = "-100" max = "0" value = "-30" id = "ratioslider">
+        <br>
+        Knee:
+        <input type = "range" min = "0" max = "100" value = "15" id = "kneeslider">
+        <br>
+        Attack:
+        <input type = "range" min = "0" max = "1" step = "0.01" value = "0.16" id = "attackslider">
+        <br>
+        Release:
+        <input type = "range" min = "0" max = "1" step = "0.01" value = "0.55" id = "releaseslider">
+        <br>
+        <script src= "compressor.js"></script>
+    </body>
+</html>
