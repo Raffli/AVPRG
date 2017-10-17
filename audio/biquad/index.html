@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Nikos Website!!!</title>
+        <link rel="stylesheet" type="text/css" href="../../style.css">
+    </head>
+    <body>
+        <h1>Biquad</h1>
+        <a href="../../index.html">Frequenz Checker</a>
+        <br>
+        <br>
+        <button id = "playButton">PlayIcon</button>
+        <br>
+        Type:
+        <select id="filterType">
+            <option value="lowpass">Lowpass</option>
+            <option value="highpass">Highpass</option>
+            <option value="bandpass">Bandpass</option>
+            <option value="lowshelf">Lowshelf</option>
+            <option value="highshelf">Highshelf</option>
+            <option value="peaking">Peaking</option>
+            <option value="notch">Notch</option>
+            <option value="allpass">Allpass</option>
+        </select>
+        <br>
+        Frequenzy:
+        <input type = "range" min = "20" max = "20000" value = "1000" id = "frequenzyslider">
+        <br>
+        Detune:
+        <input type = "range" min = "0" max = "100" value = "30" id = "detuneslider">
+        <br>
+        Quality:
+        <input type = "range" min = "0" max = "100" value = "100" id = "qslider">
+        <br>
+        Gain:
+        <input type = "range" min = "0" max = "100" value = "25" id = "gainslider">
+        <br>
+        <script src= "biquad.js"></script>
+    </body>
+</html>

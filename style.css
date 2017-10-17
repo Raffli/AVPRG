@@ -41,9 +41,12 @@ h1 {
 
 #drumMachine{
         font-size: 30px;
-
 }
 #compressor{
+        font-size: 30px;
+}
+
+#biquad{
         font-size: 30px;
 
 }
