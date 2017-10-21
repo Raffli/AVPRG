@@ -1,3 +1,5 @@
+var bar = document.getElementById("micBar");
+var text = document.getElementById("micText");
 
 navigator.mediaDevices.getUserMedia({ audio: true, video: false})
 .then(function(stream) {
@@ -9,8 +11,7 @@ navigator.mediaDevices.getUserMedia({ audio: true, video: false})
     analyser.fftSize = 2048;
     liveInput.connect(analyser);
     analyser.connect(context.destination);
-    let array = new Uint8Array(analyser.frequencyBinCount);
-    let actualData = analyser.getByteFrequencyData(array);
+
 
     function getAverageVolume(array) {
         var values = 0;
@@ -23,9 +24,11 @@ navigator.mediaDevices.getUserMedia({ audio: true, video: false})
 
 
     window.setInterval(function() {
-
-        console.log(getAverageVolume(actualData)+"db")
-    }, 1000);
+        var array = new Uint8Array(analyser.frequencyBinCount);
+        analyser.getByteFrequencyData(array);
+        text.textContent = getAverageVolume(array) + " db";
+        bar.style.width = ((getAverageVolume(array) / 150) * 100)+'%';
+    }, 100);
 
 
 });

@@ -25,30 +25,30 @@ h1 {
 }
 
 #theremin{
-        font-size: 30px;
-
+    font-size: 30px;
 }
 
 #effekte{
-        font-size: 30px;
-
+    font-size: 30px;
 }
 
 #convolver{
-        font-size: 30px;
-
+    font-size: 30px;
 }
 
 #drumMachine{
-        font-size: 30px;
+    font-size: 30px;
 }
 #compressor{
-        font-size: 30px;
+    font-size: 30px;
 }
 
 #biquad{
-        font-size: 30px;
+    font-size: 30px;
+}
 
+#microinput{
+    font-size: 30px;
 }
 
 html, body {
@@ -145,3 +145,14 @@ div {
 
 
 .show {display:block;}
+
+
+#myProgress {
+    width: 100%;
+    background-color: grey;
+}
+#micBar {
+    width: 1%;
+    height: 50px;
+    background-color: green;
+}
