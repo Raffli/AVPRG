@@ -115,6 +115,11 @@ div {
     position: relative;
 }
 
+#microinput{
+    width: 100%;
+    position: relative;
+}
+
 .dropdown {
     position: relative;
     display: inline-block;
