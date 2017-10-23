@@ -5,7 +5,6 @@ navigator.mediaDevices.getUserMedia({ audio: true, video: false})
 .then(function(stream) {
     var context = new AudioContext();
     var liveInput = context.createMediaStreamSource(stream);
-    liveInput.connect(context.destination);
     var analyser = context.createAnalyser();
 
     analyser.fftSize = 2048;
