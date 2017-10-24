@@ -55,6 +55,10 @@ h1 {
     font-size: 30px;
 }
 
+#synthesizer{
+    font-size: 30px;
+}
+
 html, body {
     height: 100%; padding: 0; margin: 0;
 }
