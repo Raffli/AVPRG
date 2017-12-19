@@ -19,4 +19,5 @@ function onMIDIMessage(event) {
     // event.data[1] = midi note
     // event.data[2] = velocity
     console.log(event.data.toString());
+    playTone(event);
 }
